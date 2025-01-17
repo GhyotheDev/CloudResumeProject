@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your name - Full-stack Developer, Web Developer, Designer">
+  <meta name="author" content="Your Name">
+  <title>Ghyovani Vielot - Portfolio</title>
+
+  <!-- Link to Google Fonts (Roboto and Poppins for modern feel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Inline CSS for styling -->
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #e0e0e0; /* Silver-like text color */
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p, a, li {
+      font-weight: 400;
+    }
+
+    /* Header */
+    header {
+      background-color: #000000;
+      color: #4CAF50; /* Accent color: Blue-Green */
+      text-align: center;
+      padding: 80px 20px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    /* About Me Section */
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 50px;
+      margin-top: 60px;
+    }
+
+    .about div {
+      flex: 1;
+    }
+
+    .about img {
+      max-width: 300px;
+      border-radius: 50%;
+      border: 4px solid #4CAF50; /* Blue-Green border */
+    }
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .projects .project {
+      background-color: #1f1f1f;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .projects .project img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #4CAF50;
+    }
+
+    .projects .project h3 {
+      font-size: 1.8em;
+      color: #ffffff;
+      padding: 15px;
+    }
+
+    .projects .project p {
+      color: #e0e0e0;
+      padding: 0 15px;
+      font-size: 1em;
+    }
+
+    .projects .project a {
+      display: block;
+      text-align: center;
+      background-color: #4CAF50;
+      color: #ffffff;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .projects .project a:hover {
+      background-color: #007b5f;
+    }
+
+    /* Contact Section */
+    .contact form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 15px;
+      background-color: #333;
+      border: 1px solid #e0e0e0;
+      color: #e0e0e0;
+      font-size: 1em;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #4CAF50;
+      border: none;
+      padding: 15px;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #007b5f;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000000;
+      color: #e0e0e0;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid #4CAF50;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Query for Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        padding: 60px 20px;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Ghyovani Vielot</h1>
+    <p>| Cloud Engineer | AWS | Azure | Agile | Devops | Linux | Project Management | Business Development </p>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about">
+    <div>
+      <h2>About Me</h2>
+      <p>I am a skilled Cloud Engineer with extensive experience in designing, implementing, and optimizing cloud infrastructures. With a strong background in AWS and a comprehensive understanding of various cloud technologies, I specialize in building scalable, secure, and efficient solutions. My expertise extends to Linux system administration, networking, and automation, ensuring seamless integration and performance across cloud environments. Passionate about continuous learning and staying ahead of industry trends, I am committed to delivering high-quality, innovative cloud architectures that drive business success.
+
+
+
+
+      </p>
+    </div>
+    <div>
+      <img src="https://s3.us-east-1.amazonaws.com/ghyovaniv.com/IMG_3339.JPG" alt="IMG_3339.JPG">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <div class="project">
+      <h3>Uptime Kuma</h3>
+      <img src="https://s3.us-east-1.amazonaws.com/ghyovaniv.com/1713736470801.png" alt="1713736470801.png">
+      <p>A web application built using Nginix and Docker,hosted on an EC2 instance configured behind Enteprise best practice VPC architectures.</p>
+      <a href="http://uptimek-1177206689.us-east-1.elb.amazonaws.com/status-page">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Cloud Resume Challenge</h3>
+      <img src="https://s3.us-east-1.amazonaws.com/ghyovaniv.com/PortfolioScreenShot.png" alt="PortfolioScreenShot.png">
+      <p>The Cloud Resume Challenge is a hands-on project where I built and deployed a personal resume website using AWS services like S3, Lambda, and DynamoDB. It involves creating a serverless architecture, setting up CI/CD pipelines, and securing the site with best practices in cloud infrastructure. This challenge showcases my proficiency in AWS, serverless computing, and DevOps automation.</p>
+      <a href="https://s3.us-east-1.amazonaws.com/ghyovaniv.com/index.html">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/ghyovani-vielot/" target="_blank">LinkedIn</a> | <a href="https://github.com/GhyotheDev" target="_blank">GitHub</a></p>
+    <p>&copy; 2025 Ghyovani Vielot. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
